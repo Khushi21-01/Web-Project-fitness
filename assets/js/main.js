@@ -10,9 +10,9 @@ $(document).ready(function() {
         },
         {
             id: 2,
-            name: "Yoga Mat",
+            name: "yoga mat",
             price: 29.99,
-            image: "assets/images/yoga mat.jpg",
+            image: "assets/images/yoga mat.jpeg",
             description: "Eco-friendly non-slip mat"
         },
 
@@ -63,9 +63,10 @@ $(document).ready(function() {
         showItem(currentIndex);
         
         // Add slide animation
-        $carousel.css('margin-left', '-100%').animate(
+      /*  $carousel.css('margin-left', '-100%').animate(
             { 'margin-left': '0' }, 300
-        );
+        );*/
+        $carousel.hide().fadeIn(300)
     });
 
     // Touch swipe support (jQuery Mobile)
@@ -77,4 +78,19 @@ $(document).ready(function() {
 
     // Initialize
     showItem(currentIndex);
+});
+
+$(document).ready(function() {
+    // Hamburger menu toggle
+    $('.hamburger').click(function() {
+        $('.nav-links').toggleClass('active');
+        
+        // Optional: Toggle hamburger icon animation
+        $(this).toggleClass('open');
+    });
+
+    // Close menu when clicking a link (for single-page feel)
+    $('.nav-links a').click(function() {
+        $('.nav-links').removeClass('active');
+    });
 });
