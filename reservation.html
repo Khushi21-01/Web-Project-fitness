@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness World - Premium Fitness Equipment</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Fitness World</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="reservation-page">
+        <h1>Reserve Your Equipment</h1>
+        
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" class="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" class="required">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone">
+            </div>
+            
+            <div class="form-group">
+                <label for="product">Product *</label>
+                <select id="product" class="required">
+                    <option value="">Select equipment</option>
+                    <option value="1">Pro Treadmill</option>
+                    <option value="2">Adjustable Dumbbells</option>
+                </select>
+            </div>
+            <a href="confirmation.html" class="cta-button">Reservation</a>
+            
+        </form>
+    </main>
+
+    
+    
+</body>
+</html>

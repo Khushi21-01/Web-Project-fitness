@@ -1,0 +1,232 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+       
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    backdrop-filter: blur(4px);
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+}
+.cta-button:hover{
+ color: #333;   
+ box-shadow: #72f657   0px 0px 20px 0px;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+}
+.nav-links li a:hover {
+    background: #6ca865;
+    
+}
+
+.hero {
+   /* background: url('../images/bg.jpg') no-repeat center center/cover;*/
+   
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #77d051;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links li a {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #2c3e50;
+        transition: all 0.5s ease;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+}
+
+.featured{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0;
+    color: #ffffff;
+}
+
+/* jQuery Mobile Carousel Styles */
+.product-carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product-carousel {
+    display: flex;
+    transition: transform 0.3s ease;
+    padding: 10px 0;
+}
+
+.carousel-item {
+    min-width: 300px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.carousel-nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.carousel-nav span {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 0 10px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Touch feedback for mobile */
+.carousel-item {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 250px;
+    }
+    
+    .carousel-item img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        min-width: 200px;
+    }
+}
+
+.contact-page {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+    color: #ffffff;
+}
+
+/*[roduct page*/
+.product-grid {
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 2rem auto;
+    color: #ffffff;
+}
+
+.product-info {
+    background-color: rgba(0, 0, 0, 0.8) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    
+}
+
+.reservation-page {
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+    color: #ffffff;
+}
+.reservation-form {
+    justify-content:center ;
+    flex-direction: column;
+}
+
+.confirmation-page
+    {
+        padding: 2rem;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 2rem auto;
+        color: #ffffff;
+    }
